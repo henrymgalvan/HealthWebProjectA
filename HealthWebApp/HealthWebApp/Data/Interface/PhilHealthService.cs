@@ -23,6 +23,16 @@ namespace HealthWebApp.Data.Interface
             throw new NotImplementedException();
         }
 
+        PhilHealth IPhilHealth.Get(string PhilHealthID)
+        {
+            throw new NotImplementedException();
+        }
+        
+        string IPhilHealth.GetPhilHealthID(long Id)
+        {
+            throw new NotImplementedException();
+        }
+        
         IEnumerable<PhilHealth> IPhilHealth.Getall()
         {
             throw new NotImplementedException();
