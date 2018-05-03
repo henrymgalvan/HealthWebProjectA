@@ -10,6 +10,8 @@ namespace HealthWebApp.Data.Interface
     {
         IEnumerable<PhilHealth> Getall();
         PhilHealth Get(long Id);
+        PhilHealth Get(string PhilHealthID)
+        string GetPhilHealthID(long Id);
         void Add(PhilHealth newPhilHealth);
         void Update(PhilHealth updatedPhilHealth);
         void Delete(long Id);
