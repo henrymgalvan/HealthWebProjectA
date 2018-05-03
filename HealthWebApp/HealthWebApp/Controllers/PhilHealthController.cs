@@ -24,6 +24,9 @@ namespace HealthWebApp.Controllers
         {
             List<Person> allPersons = _person.Getall().ToList();
             List<PhilHealth> allPhilHealth = _philHealth.Getall().ToList();
+            IEnuberable<PhilHealthIndexModel> philHealthIndexModel;
+            
+            
             return View();
         }
         public IActionResult Details(long Id)
